@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid black;
+    display: grid;
+    height: 100vh;
+    padding: 0 10rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: "p1 p1 p1"
+        "s1 gb s2"
+        "p2 p2 p2";
+}
+
+.player1 {
+    grid-area: p1;
+    background-color: antiquewhite;
+}
+
+.player2 {
+    grid-area: p2;
+    background-color: aqua;
+}
+
+.aside {
+    background-color: bisque;
+}
+
+#side1 {
+    grid-area: s1;
+}
+
+#side2 {
+    grid-area: s2;
+}
+
+.gameboard {
+    grid-area: gb;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.col {
+    flex-grow: 1;
+    /* flex-basis: 100%; */
+    border-right: 2px solid black;
+}
+
+.col:hover {
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+.col1 {
+    flex-grow: 1;
+}
+
+.col2 {
+    flex-grow: 1;
+}
+
+.col2 {
+    flex-grow: 1;
+}
